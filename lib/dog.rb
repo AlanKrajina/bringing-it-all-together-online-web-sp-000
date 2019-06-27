@@ -61,20 +61,12 @@ class Dog
   	pat    
   end
   
+  
+  
 end
 
 =begin
 
-  describe '.new_from_db' do
-    it 'creates an instance with corresponding attribute values' do
-      row = [1, "Pat", "poodle"]
-      pat = Dog.new_from_db(row)
-
-      expect(pat.id).to eq(row[0])
-      expect(pat.name).to eq(row[1])
-      expect(pat.breed).to eq(row[2])
-    end
-  end
 
   describe '.find_by_name' do
     it 'returns an instance of dog that matches the name from the DB' do
